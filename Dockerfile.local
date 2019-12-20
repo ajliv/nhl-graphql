@@ -1,0 +1,20 @@
+FROM node:12-alpine
+
+# include local node_module binaries from package.json in PATH
+ENV PATH="/app/node_modules/.bin:${PATH}"
+
+WORKDIR /app
+
+# install alpine sdk to get development packages, specifically make
+RUN set -ex; \
+    apk add --update alpine-sdk && \
+    touch yarn-error.log && \
+    mkdir -p -m 777 node_modules /home/node/.cache/yarn && \
+    chown -R node:node node_modules yarn-error.log /home/node/.cache/yarn;
+
+COPY .babelrc Makefile global.d.ts package.json tsconfig.json yarn.lock ./
+COPY src src/
+
+USER node
+ENTRYPOINT [ "make" ]
+CMD [ "local" ]

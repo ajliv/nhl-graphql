@@ -1,0 +1,38 @@
+version: '3.7'
+
+networks:
+  graphql:
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    tty: true
+    restart: always
+    env_file: .env
+    environment:
+      BABEL_DISABLE_CACHE: 1
+      NODE_ENV: development
+      PORT: 4000
+      REDIS_HOST: redis
+    healthcheck:
+      test: curl -f http://localhost:4000/.well-known/apollo/server-health || exit 1
+    depends_on:
+    - redis
+    networks:
+    - graphql
+    ports:
+    - 4000:4000
+    volumes:
+    - ./global.d.ts:/app/global.d.ts
+    - ./src:/app/src
+    - yarn:/home/node/.cache/yarn
+
+  redis:
+    image: redis:5.0.6
+    networks:
+    - graphql
+
+volumes:
+  yarn:

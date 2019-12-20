@@ -1,0 +1,87 @@
+type Query {
+    conference(id: Int): Conference
+    conferences: [Conference]!
+    division(id: Int): Division
+    divisions: [Division]!
+    player(id: Int): Player
+    team(id: Int): Team
+}
+
+type PageInfo {
+    hasNextPage: Boolean!
+    hasPreviousPage: Boolean!
+    startCursor: String
+    endCursor: String
+}
+
+# A timestamp in the ISO8601 standard format
+scalar Datetime
+
+enum Position {
+    C
+    D
+    G
+    LW
+    RW
+}
+
+enum PositionType {
+    DEFENSEMAN
+    FORWARD
+    GOALIE
+}
+
+enum ShootsCatches {
+    L
+    R
+}
+
+type Conference @key(fields: "id") {
+    id: Int!
+    abbreviation: String
+    active: Boolean
+    divisions: [Division]!
+    name: String
+    shortName: String
+}
+
+type Division @key(fields: "id") {
+    id: Int!
+    abbreviation: String
+    active: Boolean
+    conference: Conference
+    name: String
+    shortName: String
+}
+
+type Player @key(fields: "id") {
+    id: Int!
+    age: Int
+    alternateCaptain: Boolean
+    birthDate: Datetime
+    captain: Boolean
+    currentTeam: Team
+    firstName: String
+    fullName: String
+    height: String
+    lastName: String
+    position: Position
+    positionType: PositionType
+    primaryNumber: Int
+    rookie: Boolean
+    shootsCatches: ShootsCatches
+    weight: Int
+}
+
+type Team @key(fields: "id") {
+    id: Int!
+    abbreviation: String
+    active: Boolean
+    conference: Conference
+    division: Division
+    firstYearOfPlay: Int
+    locationName: String
+    name: String
+    roster: [Player]!
+    teamName: String
+}

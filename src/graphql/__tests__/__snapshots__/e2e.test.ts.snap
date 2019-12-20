@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`E2E Server fetches a person 1`] = `
+Object {
+  "data": Object {
+    "player": Object {
+      "age": 29,
+      "birthDate": "1989-11-21T00:00:00.000Z",
+      "currentTeam": Object {
+        "name": "Dallas Stars",
+      },
+      "fullName": "Antoine Roussel",
+      "position": "LW",
+    },
+  },
+}
+`;
+
+exports[`E2E Server fetches a team 1`] = `
+Object {
+  "data": Object {
+    "team": Object {
+      "abbreviation": "DAL",
+      "name": "Dallas Stars",
+      "roster": Array [
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+        Object {
+          "primaryNumber": 26,
+        },
+      ],
+    },
+  },
+}
+`;

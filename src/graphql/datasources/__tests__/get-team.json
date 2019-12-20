@@ -1,0 +1,387 @@
+{
+  "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2019. All Rights Reserved.",
+  "teams": [
+    {
+      "id": 25,
+      "name": "Dallas Stars",
+      "link": "/api/v1/teams/25",
+      "venue": {
+        "id": 5019,
+        "name": "American Airlines Center",
+        "link": "/api/v1/venues/5019",
+        "city": "Dallas",
+        "timeZone": {
+          "id": "America/Chicago",
+          "offset": -6,
+          "tz": "CST"
+        }
+      },
+      "abbreviation": "DAL",
+      "teamName": "Stars",
+      "locationName": "Dallas",
+      "firstYearOfPlay": "1967",
+      "division": {
+        "id": 16,
+        "name": "Central",
+        "nameShort": "CEN",
+        "link": "/api/v1/divisions/16",
+        "abbreviation": "C"
+      },
+      "conference": {
+        "id": 5,
+        "name": "Western",
+        "link": "/api/v1/conferences/5"
+      },
+      "franchise": {
+        "franchiseId": 15,
+        "teamName": "Stars",
+        "link": "/api/v1/franchises/15"
+      },
+      "roster": {
+        "roster": [
+          {
+            "person": {
+              "id": 8471691,
+              "fullName": "Martin Hanzal",
+              "link": "/api/v1/people/8471691"
+            },
+            "jerseyNumber": "40",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8475730,
+              "fullName": "Stephen Johns",
+              "link": "/api/v1/people/8475730"
+            },
+            "jerseyNumber": "28",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8470621,
+              "fullName": "Corey Perry",
+              "link": "/api/v1/people/8470621"
+            },
+            "jerseyNumber": "10",
+            "position": {
+              "code": "R",
+              "name": "Right Wing",
+              "type": "Forward",
+              "abbreviation": "RW"
+            }
+          },
+          {
+            "person": {
+              "id": 8470794,
+              "fullName": "Joe Pavelski",
+              "link": "/api/v1/people/8470794"
+            },
+            "jerseyNumber": "16",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8471228,
+              "fullName": "Alexander Radulov",
+              "link": "/api/v1/people/8471228"
+            },
+            "jerseyNumber": "47",
+            "position": {
+              "code": "R",
+              "name": "Right Wing",
+              "type": "Forward",
+              "abbreviation": "RW"
+            }
+          },
+          {
+            "person": {
+              "id": 8471260,
+              "fullName": "Blake Comeau",
+              "link": "/api/v1/people/8471260"
+            },
+            "jerseyNumber": "15",
+            "position": {
+              "code": "L",
+              "name": "Left Wing",
+              "type": "Forward",
+              "abbreviation": "LW"
+            }
+          },
+          {
+            "person": {
+              "id": 8471284,
+              "fullName": "Andrej Sekera",
+              "link": "/api/v1/people/8471284"
+            },
+            "jerseyNumber": "5",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8471392,
+              "fullName": "Roman Polak",
+              "link": "/api/v1/people/8471392"
+            },
+            "jerseyNumber": "45",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8471418,
+              "fullName": "Anton Khudobin",
+              "link": "/api/v1/people/8471418"
+            },
+            "jerseyNumber": "35",
+            "position": {
+              "code": "G",
+              "name": "Goalie",
+              "type": "Goalie",
+              "abbreviation": "G"
+            }
+          },
+          {
+            "person": {
+              "id": 8471699,
+              "fullName": "Andrew Cogliano",
+              "link": "/api/v1/people/8471699"
+            },
+            "jerseyNumber": "11",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8471750,
+              "fullName": "Ben Bishop",
+              "link": "/api/v1/people/8471750"
+            },
+            "jerseyNumber": "30",
+            "position": {
+              "code": "G",
+              "name": "Goalie",
+              "type": "Goalie",
+              "abbreviation": "G"
+            }
+          },
+          {
+            "person": {
+              "id": 8473994,
+              "fullName": "Jamie Benn",
+              "link": "/api/v1/people/8473994"
+            },
+            "jerseyNumber": "14",
+            "position": {
+              "code": "L",
+              "name": "Left Wing",
+              "type": "Forward",
+              "abbreviation": "LW"
+            }
+          },
+          {
+            "person": {
+              "id": 8475413,
+              "fullName": "Justin Dowling",
+              "link": "/api/v1/people/8475413"
+            },
+            "jerseyNumber": "37",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8475794,
+              "fullName": "Tyler Seguin",
+              "link": "/api/v1/people/8475794"
+            },
+            "jerseyNumber": "91",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8475906,
+              "fullName": "John Klingberg",
+              "link": "/api/v1/people/8475906"
+            },
+            "jerseyNumber": "3",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8476166,
+              "fullName": "Taylor Fedun",
+              "link": "/api/v1/people/8476166"
+            },
+            "jerseyNumber": "42",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8476467,
+              "fullName": "Jamie Oleksiak",
+              "link": "/api/v1/people/8476467"
+            },
+            "jerseyNumber": "2",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8476889,
+              "fullName": "Radek Faksa",
+              "link": "/api/v1/people/8476889"
+            },
+            "jerseyNumber": "12",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8476902,
+              "fullName": "Esa Lindell",
+              "link": "/api/v1/people/8476902"
+            },
+            "jerseyNumber": "23",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          },
+          {
+            "person": {
+              "id": 8477406,
+              "fullName": "Mattias Janmark",
+              "link": "/api/v1/people/8477406"
+            },
+            "jerseyNumber": "13",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8477450,
+              "fullName": "Jason Dickinson",
+              "link": "/api/v1/people/8477450"
+            },
+            "jerseyNumber": "18",
+            "position": {
+              "code": "C",
+              "name": "Center",
+              "type": "Forward",
+              "abbreviation": "C"
+            }
+          },
+          {
+            "person": {
+              "id": 8478449,
+              "fullName": "Roope Hintz",
+              "link": "/api/v1/people/8478449"
+            },
+            "jerseyNumber": "24",
+            "position": {
+              "code": "L",
+              "name": "Left Wing",
+              "type": "Forward",
+              "abbreviation": "LW"
+            }
+          },
+          {
+            "person": {
+              "id": 8478495,
+              "fullName": "Denis Gurianov",
+              "link": "/api/v1/people/8478495"
+            },
+            "jerseyNumber": "34",
+            "position": {
+              "code": "R",
+              "name": "Right Wing",
+              "type": "Forward",
+              "abbreviation": "RW"
+            }
+          },
+          {
+            "person": {
+              "id": 8480036,
+              "fullName": "Miro Heiskanen",
+              "link": "/api/v1/people/8480036"
+            },
+            "jerseyNumber": "4",
+            "position": {
+              "code": "D",
+              "name": "Defenseman",
+              "type": "Defenseman",
+              "abbreviation": "D"
+            }
+          }
+        ],
+        "link": "/api/v1/teams/25/roster"
+      },
+      "shortName": "Dallas",
+      "officialSiteUrl": "http://www.dallasstars.com/",
+      "franchiseId": 15,
+      "active": true
+    }
+  ]
+}

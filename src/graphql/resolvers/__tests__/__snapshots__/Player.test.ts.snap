@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return a birthDate 1`] = `1989-11-21T00:00:00.000Z`;
+
+exports[`should return an age based on context \`now\` 1`] = `29`;

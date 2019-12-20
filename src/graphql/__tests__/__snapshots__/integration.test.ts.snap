@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Queries fetches antoine 1`] = `
+Object {
+  "data": Object {
+    "player": Object {
+      "birthDate": "1989-11-21T00:00:00.000Z",
+      "currentTeam": Object {
+        "abbreviation": "DAL",
+        "name": "Dallas Stars",
+      },
+      "fullName": "Antoine Roussel",
+      "position": "LW",
+      "primaryNumber": 26,
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
