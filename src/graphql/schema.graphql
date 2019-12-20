@@ -4,6 +4,7 @@ type Query {
     division(id: Int): Division
     divisions: [Division]!
     player(id: Int): Player
+    standings(type: StandingsType): [Standings]
     team(id: Int): Team
 }
 
@@ -17,6 +18,13 @@ type PageInfo {
 # A timestamp in the ISO8601 standard format
 scalar Datetime
 
+enum ClinchIndicator {
+    p
+    x
+    y
+    z
+}
+
 enum Position {
     C
     D
@@ -26,14 +34,65 @@ enum Position {
 }
 
 enum PositionType {
-    DEFENSEMAN
-    FORWARD
-    GOALIE
+    Defenseman
+    Forward
+    Goalie
 }
 
 enum ShootsCatches {
     L
     R
+}
+
+enum StandingsType {
+    byConference
+    byDivision
+    byLeague
+    divisionLeaders
+    postseason
+    preseason
+    regularSeason
+    wildCard
+    wildCardWithLeaders
+}
+
+enum StatsType {
+    byDayOfWeek
+    byDayOfWeekPlayoffs
+    byMonth
+    byMonthPlayoffs
+    careerPlayoffs
+    careerRegularSeason
+    gameLog
+    goalsByGameSituation
+    goalsByGameSituationPlayoffs
+    homeAndAway
+    homeAndAwayPlayoffs
+    onPaceRegularSeason
+    playoffGameLog
+    playoffStatRankings
+    regularSeasonStatRankings
+    statsSingleSeason
+    statsSingleSeasonPlayoffs
+    vsConference
+    vsConferencePlayoffs
+    vsDivision
+    vsDivisionPlayoffs
+    vsTeam
+    vsTeamPlayoffs
+    winLoss
+    winLossPlayoffs
+    yearByYear
+    yearByYearPlayoffs
+    yearByYearPlayoffsRank
+    yearByYearRank
+}
+
+enum StreakType {
+    losses
+    ot
+    ties
+    wins
 }
 
 type Conference @key(fields: "id") {
@@ -73,6 +132,54 @@ type Player @key(fields: "id") {
     weight: Int
 }
 
+type Standings {
+    standingsType: StandingsType
+    division: Division
+    conference: Conference
+    teamRecords: [StandingsTeam]
+}
+
+type StandingsRecord {
+    wins: Int
+    losses: Int
+    ot: Int
+    ties: Int
+    type: String
+}
+
+type StandingsTeam {
+    team: Team
+    clinchIndicator: ClinchIndicator
+    conferenceHomeRank: Int
+    conferenceL10Rank: Int
+    conferenceRank: Int
+    conferenceRoadRank: Int
+    divisionHomeRank: Int
+    divisionL10Rank: Int
+    divisionRank: Int
+    divisionRoadRank: Int
+    gamesPlayed: Int
+    goalsAgainst: Int
+    goalsScored: Int
+    leagueHomeRank: Int
+    leagueL10Rank: Int
+    leagueRank: Int
+    leagueRecord: StandingsRecord
+    leagueRoadRank: Int
+    points: Int
+    records: TeamRecords
+    regulationWins: Int
+    row: Int
+    streak: Streak
+    wildCardRank: Int
+}
+
+type Streak {
+    streakCode: String
+    streakNumber: Int
+    streakType: StreakType
+}
+
 type Team @key(fields: "id") {
     id: Int!
     abbreviation: String
@@ -84,4 +191,10 @@ type Team @key(fields: "id") {
     name: String
     roster: [Player]!
     teamName: String
+}
+
+type TeamRecords {
+    conferenceRecords: [StandingsRecord]
+    divisionRecords: [StandingsRecord]
+    overallRecords: [StandingsRecord]
 }

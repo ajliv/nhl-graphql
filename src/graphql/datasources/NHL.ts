@@ -63,6 +63,23 @@ export default class NHL extends RESTDataSource {
         }
     }
 
+    async getStandings({ type, date }: { type?: string; date?: string }) {
+        try {
+            const url = type ? `/standings/${type}` : '/standings';
+            const params = new URLSearchParams();
+
+            if (date) {
+                params.set('date', date);
+            }
+
+            const resp = await this.get<{ records?: any[] }>(url, params);
+
+            return resp.records ?? [];
+        } catch (error) {
+            return;
+        }
+    }
+
     async getTeam(id: number) {
         if (!id) {
             return;

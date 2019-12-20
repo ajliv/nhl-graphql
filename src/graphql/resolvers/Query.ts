@@ -33,6 +33,10 @@ export const Query: Record<string, GraphQLFieldResolver<void, Context>> = {
         return dataSources.nhl.getPerson(id);
     },
 
+    standings(_, args, { dataSources }) {
+        return dataSources.nhl.getStandings(args);
+    },
+
     team(_, { id }, { dataSources }) {
         return dataSources.nhl.getTeam(id);
     },
