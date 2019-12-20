@@ -1,6 +1,9 @@
-# graphql-template
+# NHL GraphQL
 
-Template repository for GraphQL services with [Apollo Federation](https://www.apollographql.com/docs/apollo-server/federation/introduction/) support
+GraphQL wrapper of the NHL API with [Apollo Federation](https://www.apollographql.com/docs/apollo-server/federation/introduction/) support
+
+![](https://github.com/ajliv/nhl-graphql/workflows/Docker%20build/badge.svg) 
+![](https://github.com/ajliv/nhl-graphql/workflows/Tests/badge.svg)
 
 ## Requirements
 
